@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { copy, linkIcon, loader, tick } from "../assets";
-import { Input } from "postcss";
+import { useLazyGetSummaryQuery } from '../services/article'
 
 const Demo = () => {
   const [article, setArticle] = useState({
@@ -9,8 +9,22 @@ const Demo = () => {
     summary: '',
   });
 
+  const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
+
   const handleSubmit = async (e) => {
-    alert('Enviado');
+    e.preventDefault();
+
+    const { data } = await getSummary({
+      articleUrl: article.url
+    });
+
+    if(data?.summary) {
+      const newArticle = { ...article, summary: data.summary };
+
+      setArticle(newArticle);
+
+      console.log(newArticle);
+    }
   }
   return (
     <section className="mt-16 w-full max-w-xl">
@@ -18,7 +32,7 @@ const Demo = () => {
       <div className="flex flex-col w-full gap-2">
         <form
           className="relative flex justify-center items-center"
-          onSubmit={() => {}}
+          onSubmit={handleSubmit}
         >
           <img
             src={linkIcon}
@@ -29,8 +43,10 @@ const Demo = () => {
           <input
             type="url"
             placeholder="Entre uma URL"
-            value=""
-            onChange={() => {}}
+            value={article.url}
+            onChange={(e) => setArticle({ ...
+              article, url: e.target.value
+            })}
             required
             className="url_input peer"
           />
