@@ -14,7 +14,7 @@ O aplicativo conta com as seguintes caracteristicas:
 Configuração de um projeto ReactJS usando o Vite
 Criação de uma UI/UX responsiva e bonita com um belo toque de morfismo de vidro usando Tailwind CSS
 Fazer solicitações avançadas de API de consulta RTK que disparam sob condição
-Salvav histórico usando o armazenamento local
+Salva histórico usando o armazenamento local
 Lida com eventos de formulário e capturar erros
 Implementa copia para a área de transferência
 Escrito em código limpo
