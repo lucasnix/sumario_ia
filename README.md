@@ -1,9 +1,6 @@
 # sumario_ia
 
-<img src="http://cointoken.com.br/wp-content/uploads/2023/04/PICIA.jpg" alt="Girl in a jacket" width="966" height="510">
-
-
-ChatGPT AI SaaS Business with React
+<img src="http://cointoken.com.br/wp-content/uploads/2023/04/PICIA.jpg" alt="Girl in a jacket" width="833" height="512">
 
 Introduction
 
