@@ -12,7 +12,7 @@ Configuração de um projeto ReactJS usando o Vite.
 
 Criação de uma UI/UX responsiva e bonita com um belo toque de morfismo de vidro usando Tailwind CSS.
 
-Fazer solicitações avançadas de API de consulta RTK que disparam sob condição.
+Faz solicitações avançadas de API de consulta RTK que disparam sob condição.
 
 Salva histórico usando o armazenamento local.
 
