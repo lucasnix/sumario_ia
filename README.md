@@ -1,6 +1,6 @@
 # sumario_ia
 
-<img src="http://cointoken.com.br/wp-content/uploads/2023/04/PICIA.jpg" alt="AI img" width="833" height="466" style="max-width: 100%;">
+<img src="http://cointoken.com.br/wp-content/uploads/2023/04/PICIA.jpg" alt="AI img" style="max-width: 100%;">
 
 Introduction
 
